@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #AA5656;
+  }
+  
+  .register {
+    background-color: #698269;
+    padding: 40px;
+    border-radius: 20px;
+    border: 8px solid #F1DBBF;
+  }
+  
+  .register-container .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .register-container .form h2 {
+    color: #F1DBBF;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+  }
+  
+  .register-container .form .inputBox {
+    position: relative;
+    width: 300px;
+  }
+  
+  .register-container .form .inputBox input {
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  .register-container .form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 0.5s;
+    border-radius: 25px;
+    letter-spacing: 0.05em;
+    color: #00294b;
+  }
+  
+  .register-container .form .inputBox input:valid ~ span,
+  .register-container .form .inputBox input:focus ~ span {
+    color: #000;
+    background: #F1DBBF;
+    font-weight: 400;
+    border: 1px solid #00294b;
+    transform: translateX(25px) translateY(-7px);
+    font-size: 0.8em;
+    padding: 0 8px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+  }
+  
+  .register-container .form .inputBox input:valid,
+  .register-container .form .inputBox input:focus {
+    border: 1px solid #00294b;
+  }
+  .register-container .form .inputBox i {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 25px;
+    padding: 2px 0;
+    padding-right: 8px;
+    color: #00294b;
+    border-right: 1px solid #AA5656;
+  }
+  
+  .register-container .form .inputBox input[type="submit"] {
+    background-color: #AA5656;
+    color: #F1DBBF;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px #F1DBBF;
+  }
+  
+  .register-container .form p {
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 400;
+  }
+  
+  .register-container .form p a {
+    font-weight: 500;
+    color: #F1DBBF;
+  }
+  
